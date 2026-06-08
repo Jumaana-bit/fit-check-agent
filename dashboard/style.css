@@ -1,0 +1,28 @@
+
+.fit-form {
+    max-width: 350px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font-family: sans-serif;
+}
+
+.fit-form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+#save-btn {
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#save-btn:hover {
+    background: #333;
+}
