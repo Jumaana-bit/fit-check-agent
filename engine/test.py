@@ -1,10 +1,5 @@
-import sqlite3
-from pathlib import Path
+import asyncio
+from scrapers.hm.scraper import scrape_hm_product
 
-db_path = Path("data/database.db")
-conn = sqlite3.connect(db_path)
-cur = conn.cursor()
-
-cur.execute("SELECT * FROM measurements")
-print(cur.fetchall())
+asyncio.run(scrape_hm_product("https://www2.hm.com/en_ca/productpage.1342410001.html"))
 
